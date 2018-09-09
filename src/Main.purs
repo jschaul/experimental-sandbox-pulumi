@@ -1,6 +1,7 @@
 module Main where
 
 import Prelude
+import Effect.Unsafe
 import Effect (Effect)
 import Effect.Console (log)
 import Aws (createBucket)
@@ -8,8 +9,14 @@ import Aws (createBucket)
 main :: Effect Unit
 main = do
   log "Hello sailor!"
-  doAWS
+  bucket <- createBucket "hello-sailor-test-42480"
+  let x = bucket.bucketDomainName.apply (unsafePerformEffect <<< log)
   log "Hello sailor (not dead!)!"
 
-doAWS :: Effect Unit
-doAWS = createBucket "cellar-door"
+
+whatIwantToBePrinted :: String
+whatIwantToBePrinted = "bla"
+
+
+
+
