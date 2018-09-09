@@ -1,0 +1,26 @@
+{
+  "name": "experimental-sandbox-pulumi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jschaul/experimental-sandbox-pulumi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jschaul/experimental-sandbox-pulumi/issues"
+  },
+  "homepage": "https://github.com/jschaul/experimental-sandbox-pulumi#readme",
+  "dependencies": {
+    "@pulumi/aws": "^0.15.0",
+    "@pulumi/pulumi": "^0.15.0"
+  }
+}
