@@ -11,7 +11,5 @@ main = do
   doAWS
   log "Hello sailor (not dead!)!"
 
-
 doAWS :: Effect Unit
-doAWS = createBucket 13
-
+doAWS = createBucket "cellar-door"
